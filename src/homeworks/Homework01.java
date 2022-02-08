@@ -1,5 +1,7 @@
 package homeworks;
 
+import java.nio.file.WatchEvent;
+
 public class Homework01 {
     public static void main(String[] args) {
 
@@ -55,18 +57,21 @@ public class Homework01 {
         The hard days are what make you stronger.
         You can waste your lives drawing lines. Or you can live your life crossing them.
          */
+        System.out.println("\n------------TASK-3------------\n");
 
         System.out.println("I start to practice \"JAVA\" today, and I like it.");
         System.out.println("The secret of getting ahead is getting started.");
         System.out.println("\"Don't limit yourself.\"");
+        System.out.println("Invest in your dreams. Grind now. Shine later.");
+        System.out.println("It’s not the load that breaks you down, it’s the way you carry it.");
+        System.out.println("The hard days are what make you stronger.");
+        System.out.println("You can waste your lives drawing lines. Or you can live your life crossing them.");
 
 
         /*
         TASK-4
-        -Write a program that prints the whole below
-        text in ONLY 1 println statement (you can
-        use escape sequences to provide line or
-        insert a tab)
+        -Write a program that prints the whole below text in ONLY 1 println statement (you can
+        use escape sequences to provide line or insert a tab)
 
             Java is easy to write and easy to run—this is
         the foundational strength of Java and why many
@@ -84,19 +89,47 @@ public class Homework01 {
         such as Linux or Windows.
          */
 
+        System.out.println("\n------------TASK-4------------\n");
 
+        System.out.println("\tJava is easy to write and easy to run—this is\n" +
+                "the foundational strength of Java and why many\n" +
+                "developers program in it. When you write Java\n" +
+                "once, you can run it almost anywhere at any time.\n\n" +
+                "\tJava can be used to create complete\n" +
+                "applications that can run on a single computer or\n" +
+                "be distributed across servers and clients in a\n" +
+                "network.\n\n" +
+                "\tAs a result, you can use it to easily build\n" +
+                "mobile applications or run-on desktop applications\n" +
+                "that use different operating systems and servers,\n" +
+                "such as Linux or Windows.");
 
         /*
         TASK-5
         -Write a program that stores below information with proper data types and
         print all variables with separate println statements
 
-        myAge
-        myFavoriteNumber
-        myHeight
-        myWeight
-        myFavoriteCharacter
+        myAge                       int
+        myFavoriteNumber            int
+        myHeight                    double
+        myWeight                    double
+        myFavoriteCharacter         'X'
          */
 
+        System.out.println("\n------------TASK-5------------\n");
+
+        //dataType variableName = dataValue;
+
+        int myAge = 21;
+        int myFavoriteNumber = 7;
+        double myHeight = 180.4;
+        double myWeight = 184.23;
+        char myFavoriteCharacter = 'X';
+
+        System.out.println(myAge);
+        System.out.println(myFavoriteNumber);
+        System.out.println(myHeight);
+        System.out.println(myWeight);
+        System.out.println(myFavoriteCharacter);
     }
 }
