@@ -16,12 +16,13 @@ public class MyFirstProgram {
         System.out.println("Today is Sunday");
         System.out.println("My name is TechGlobal");
 
+
         System.out.println(); //this line will move cursor to a new line
 
         //print
 //        System.out.print("Tech");
-//        System.out.print("Global");
-//        System.out.print("Apple");
+////        System.out.print("Global");
+////        System.out.print("Apple");
 
         System.out.println();
         //System.out.println("Tech");

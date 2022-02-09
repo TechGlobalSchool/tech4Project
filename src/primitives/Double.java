@@ -7,7 +7,11 @@ public class Double {
 
         double myFirstDouble = 123.123456789101216;
 
+        double myInt;
+        myInt = 455;
+
         System.out.println(myFirstDouble);
+        System.out.println(myInt);
 
     }
 }
