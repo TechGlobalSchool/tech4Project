@@ -41,6 +41,6 @@ public class ScannerNextLineProblem {
 
         System.out.println("Number is = " + number); // 20
 
-
+        System.out.println('g' + 'k' + "" + 'g' + 'h'); //207gh
     }
 }

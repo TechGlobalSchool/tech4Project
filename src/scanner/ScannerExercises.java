@@ -51,5 +51,28 @@ public class ScannerExercises {
 
 
         System.out.println("User address is = \"" + userAddress + "\"");
+
+        /*
+        Write a Java program that asks user to enter
+        3 numbers and print the sum of those 3 numbers
+         */
+
+        Scanner userInput = new Scanner(System.in);
+
+        System.out.println("First number:");
+        int num1 = userInput.nextInt();
+        System.out.println("Second number:");
+        int num2 = userInput.nextInt();
+        System.out.println("Third number:");
+        int num3 = userInput.nextInt();
+
+        int sum1 = num1 + num2 + num3;
+
+        System.out.println("Sum of the numbers is = " + sum1);
+
+        System.out.println(" What is your number?");
+        int sum2 = userInput.nextInt() + userInput.nextInt() + userInput.nextInt();
+        System.out.println( "Sum of the numbers = " + sum2);
+
     }
 }
