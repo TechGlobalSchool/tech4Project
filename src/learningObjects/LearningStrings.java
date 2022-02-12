@@ -9,15 +9,15 @@ public class LearningStrings {
         //assign
         // create a String variable and assign "Hello"
 
-        String greetings; // declaration
-        greetings = "Hello"; //assignment
+        //String greetings; // declaration
+        //greetings = "Hello"; //assignment
 
         // declare and assign
         // create a String variable and assign "Hello"
 
-        String myGreetings = "Hello";
+        //String myGreetings = "Hello";
 
-        System.out.println("Hell" + "o" + " " + myGreetings);
+        //System.out.println("Hell" + "o" + " " + myGreetings);
 
 
 

@@ -1,7 +1,7 @@
 package primitives;
 
 public class Double {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         // containerType label = data;
 
@@ -10,8 +10,12 @@ public class Double {
         double myInt;
         myInt = 455;
 
+        double num1 = 4, num2 = 1, num3, num4;
+
+
         System.out.println(myFirstDouble);
         System.out.println(myInt);
 
     }
+
 }

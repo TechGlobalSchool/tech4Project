@@ -9,6 +9,10 @@ public class Int {
         int maxInt = 2147483647;
         int minInt = -2147483648;
 
+
+        int num1 = 1, num2 = 2, num3 = 3;
+
+
         System.out.println("\"vitasNumber\"\n");  // "vitasNumber"
 
         System.out.println(vitasNumber);    // 5
