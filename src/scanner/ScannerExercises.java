@@ -74,5 +74,6 @@ public class ScannerExercises {
         int sum2 = userInput.nextInt() + userInput.nextInt() + userInput.nextInt();
         System.out.println( "Sum of the numbers = " + sum2);
 
+
     }
 }
