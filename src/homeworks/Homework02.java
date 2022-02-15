@@ -2,7 +2,7 @@ package homeworks;
 
 import java.util.Scanner;
 
-public class Homework2 {
+public class Homework02 {
     public static void main(String[] args) {
 
 
