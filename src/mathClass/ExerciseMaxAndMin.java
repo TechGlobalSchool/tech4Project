@@ -21,6 +21,10 @@ public class ExerciseMaxAndMin {
                 Math.max(Math.max(4, 67), -54)); // 67, -54
 
         System.out.println("Min of every number is = " +
-                Math.min(Math.min(4, 67), -54));
+                Math.min(
+                        Math.min(4, 67), -54)
+         );
+
+        System.out.println("Hello DATA");
     }
 }
