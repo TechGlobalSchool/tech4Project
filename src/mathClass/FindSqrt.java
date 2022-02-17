@@ -16,5 +16,9 @@ public class FindSqrt {
                 "\nsqrt c = " + Math.sqrt(c) +
                 "\nsqrt d = " + Math.sqrt(d)
                 );
+
+        Math.sqrt(6 - 10 + 4 + 1 + 65 - 34 * 12 / 23 % 12);
+        //6 - 10 + 4 + 1 + 65 - 34 * 12 / 23 % 12
+        //6, 4
     }
 }
