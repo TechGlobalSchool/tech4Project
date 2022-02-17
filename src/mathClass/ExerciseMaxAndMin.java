@@ -25,6 +25,10 @@ public class ExerciseMaxAndMin {
                         Math.min(4, 67), -54)
          );
 
+
+
         System.out.println("Hello DATA");
+
+
     }
 }
