@@ -1,6 +1,6 @@
 package primitives;
 
-public class Boolean {
+public class LearningBoolean {
 
     public static void main(String[] args){
 

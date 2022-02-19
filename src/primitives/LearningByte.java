@@ -1,6 +1,6 @@
 package primitives;
 
-public class Byte {
+public class LearningByte {
     public static void main(String[] args){
         // containerType label = data;
 

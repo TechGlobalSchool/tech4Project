@@ -1,5 +1,7 @@
 package casting;
 
+import java.lang.Boolean;
+
 public class ConvertingStringToPrimitives {
     public static void main(String[] args) {
 
@@ -20,5 +22,6 @@ public class ConvertingStringToPrimitives {
         System.out.println(num1Int + num2Int); // 35
         System.out.println(num1Integer + num2Integer); // 35
 
+        Boolean b = true;
     }
 }

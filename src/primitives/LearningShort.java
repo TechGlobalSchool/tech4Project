@@ -1,6 +1,6 @@
 package primitives;
 
-public class Short {
+public class LearningShort {
     public static void main(String[] args){
         // containerType label = data;
 

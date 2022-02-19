@@ -1,6 +1,6 @@
 package primitives;
 
-public class Float {
+public class LearningFloat {
     public static void main(String[] args) {
 
         // containerType label = data;

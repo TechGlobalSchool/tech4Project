@@ -1,6 +1,6 @@
 package primitives;
 
-public class Char {
+public class LearningChar {
 
     public static void main(String[] args) {
 

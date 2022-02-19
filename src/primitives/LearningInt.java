@@ -1,6 +1,6 @@
 package primitives;
 
-public class Int {
+public class LearningInt {
     public static void main(String[] args){
         // containerType label = data;
         int vitasNumber = 5;
