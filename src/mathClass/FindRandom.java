@@ -38,5 +38,7 @@ public class FindRandom {
 
         int random_50And50Included = (int) (Math.random() * 101) - 50;
         System.out.println(random_50And50Included);
+
+       
     }
 }
