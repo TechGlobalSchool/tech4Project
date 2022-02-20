@@ -93,16 +93,16 @@ public class ExerciseRecap {
         and youngest.
 
         Program: "Please enter your name"
-        User: John Doe
+        User: John Doe,     User: Akin Kaya,
         Program: "Please enter your age:"
-        User: 45
+        User: 45,           User: 29
         Program: "Please enter your phone number:"
-        User: (123) 123 1234
+        User: (123) 123 1234, User: (864) 123 4531
         Program: "Enter the ages of your kids"
         User:
-        12
-        22
-        17
+        12,         15.7
+        22,         -32
+        17,         Abc
         Program:
         Your name is John Doe, your phone number is (123) 123 1234,
         You are 45 years old, Your oldest kid is 22 years old, your
@@ -124,16 +124,17 @@ public class ExerciseRecap {
         String phoneNumber = input.nextLine();
 
         System.out.println("Enter the ages of your kids");
-        String age1 = input.next(), age2 = input.next(), age3 = input.next();
 
+        int age1Int = Integer.parseInt(input.next()),
+                age2Int = Integer.parseInt(input.next()),
+                age3Int = Integer.parseInt(input.next());
 
-        /*
-        Your name is John Doe, your phone number is (123) 123 1234,
-        You are 45 years old, Your oldest kid is 22 years old, your
-        youngest is 12, difference between oldest and youngest is 10
-        years.
-         */
+        int oldestKid = Math.max(age3Int, Math.max(age1Int, age2Int));
+        int youngestKid = Math.min(age3Int, Math.min(age1Int, age2Int));
 
-        System.out.println("Your name is ");
+        System.out.println("Your name is " + fullName + ", your phone number is " + phoneNumber +
+                ", \nYou are " + age + " years old, Your oldest kid is " + oldestKid + " years old, your" +
+                "\nyoungest is " + youngestKid + ", difference between oldest and youngest is " +
+                Math.abs(oldestKid - youngestKid) + "\nyears.");
     }
 }
