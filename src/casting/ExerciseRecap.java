@@ -111,6 +111,33 @@ public class ExerciseRecap {
 
          */
 
+//        Scanner input = new Scanner(System.in);
+//
+//        System.out.println("Please enter your name:");
+//        String fullName = input.nextLine();
+//
+//        System.out.println("Please enter your age:");
+//        String age = input.next();
+//        input.nextLine(); // clearing the spaces!!!
+//
+//        System.out.println("Please enter your phone number:");
+//        String phoneNumber = input.nextLine();
+//
+//        System.out.println("Enter the ages of your kids");
+//        String age1 = input.next(), age2 = input.next(), age3 = input.next();
+//        int age1Int = Integer.parseInt(age1), age2Int = Integer.parseInt(age2), age3Int = Integer.parseInt(age3);
+//
+//        int oldestKid = Math.max(age3Int, Math.max(age1Int, age2Int));
+//        int youngestKid = Math.min(age3Int, Math.min(age1Int, age2Int));
+//
+//        int ageDifference = Math.abs(oldestKid - youngestKid);
+//
+//
+//        System.out.println("Your name is " + fullName + ", your phone number is " + phoneNumber +
+//                ", \nYou are " + age + " years old, Your oldest kid is " + oldestKid + " years old, your" +
+//                "\nyoungest is " + youngestKid + ", difference between oldest and youngest is " + ageDifference +
+//                "\nyears.");
+
         Scanner input = new Scanner(System.in);
 
         System.out.println("Please enter your name:");
