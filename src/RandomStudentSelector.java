@@ -57,7 +57,8 @@ public class RandomStudentSelector {
                 "Mohammed Abedrabbo",
                 "Ulas Varli",
                 "Nataliia Grynda",
-                "Jonathan Ochoa"
+                "Jonathan Ochoa",
+                "Damla Ergurel"
         };
 
         System.out.println(students[(int) (Math.random() * 57)]);

@@ -1,5 +1,7 @@
 package ifElseStatements.ifStatements;
 
+import java.util.Scanner;
+
 public class MathGradeExample {
     public static void main(String[] args) {
         /*
@@ -21,5 +23,23 @@ public class MathGradeExample {
         Program:
 
          */
+
+        /*
+        1. Create the scanner
+        2. Ask the question
+        3. Store the grade
+        4. If statement with proper action
+         */
+
+        Scanner ask = new Scanner(System.in);
+
+        System.out.println("Hey David! Please enter your math grade?");
+        int grade = ask.nextInt();
+
+        if(grade >= 60){
+            System.out.println("Awesome! You have passed the math class!");
+        } else {
+            System.out.println("Go back to school!");
+        }
     }
 }
