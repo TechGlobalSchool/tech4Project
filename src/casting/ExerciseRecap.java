@@ -71,18 +71,69 @@ public class ExerciseRecap {
                 "Your balance is now = " + (balanceD - t1D - t2D - t3D)
         );*/
 
-        Scanner scan = new Scanner(System.in);
+//        Scanner scan = new Scanner(System.in);
+//
+//        System.out.println("What is your balance?");
+//        String balance = scan.next();
+//
+//        System.out.println("What is your next 3 transactions");
+//
+//        System.out.println(
+//                "Your balance is now = " + (Double.valueOf(balance)
+//                        - Double.valueOf(scan.next())
+//                        - Double.valueOf(scan.next())
+//                        - Double.valueOf(scan.next()))
+//        );
 
-        System.out.println("What is your balance?");
-        String balance = scan.next();
 
-        System.out.println("What is your next 3 transactions");
+        /*
+        Write a program ASK user for full name, age, phone number then
+        enter their 3 kids age as string then print out everything plus
+        the oldest kid, youngest and the age difference between oldest
+        and youngest.
 
-        System.out.println(
-                "Your balance is now = " + (Double.valueOf(balance)
-                        - Double.valueOf(scan.next())
-                        - Double.valueOf(scan.next())
-                        - Double.valueOf(scan.next()))
-        );
+        Program: "Please enter your name"
+        User: John Doe
+        Program: "Please enter your age:"
+        User: 45
+        Program: "Please enter your phone number:"
+        User: (123) 123 1234
+        Program: "Enter the ages of your kids"
+        User:
+        12
+        22
+        17
+        Program:
+        Your name is John Doe, your phone number is (123) 123 1234,
+        You are 45 years old, Your oldest kid is 22 years old, your
+        youngest is 12, difference between oldest and youngest is 10
+        years.
+
+         */
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Please enter your name:");
+        String fullName = input.nextLine();
+
+        System.out.println("Please enter your age:");
+        String age = input.next();
+        input.nextLine(); // clearing the spaces!!!
+
+        System.out.println("Please enter your phone number:");
+        String phoneNumber = input.nextLine();
+
+        System.out.println("Enter the ages of your kids");
+        String age1 = input.next(), age2 = input.next(), age3 = input.next();
+
+
+        /*
+        Your name is John Doe, your phone number is (123) 123 1234,
+        You are 45 years old, Your oldest kid is 22 years old, your
+        youngest is 12, difference between oldest and youngest is 10
+        years.
+         */
+
+        System.out.println("Your name is ");
     }
 }
