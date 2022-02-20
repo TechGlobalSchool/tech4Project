@@ -10,7 +10,8 @@ public class ConvertingPrimitivesToString {
 
 
         String numStr1 = 45 + "" + num; //  4536
-        String numStr2 = String.valueOf(num + 45);
+        String cha = "Y";
+        String numStr2 = String.valueOf(num) + String.valueOf(45);
 
         System.out.println("numStr1 " + numStr1);
         System.out.println("numStr2 " + numStr2);
