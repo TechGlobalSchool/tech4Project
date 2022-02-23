@@ -14,5 +14,36 @@ public class Exercise1 {
         output:                     output:                 output:
         number is POSITIVE!         number is NEGATIVE!     number is ZERO!
          */
+
+        /*
+        1. Generate a number
+        2. Create if statements for checking 3 different possibilities
+        3. Do the proper action for every single possibility
+         */
+
+
+        int num = (int)(Math.random() * 21) - 10;
+
+        System.out.println(num);
+//        if (num < 0){ // NEGATIVE
+//            System.out.println("number is NEGATIVE!");
+//        }
+//        if (num > 0){ // POSITIVE
+//            System.out.println("number is POSITIVE!");
+//        }
+//        if (num == 0){ // ZERO
+//            System.out.println("number is ZERO!");
+//        }
+
+        // The 3 different possibilities are LINKED that means I can use if, elseif
+
+        if (num < 0){
+            System.out.println("number is NEGATIVE!");
+        }else if (num > 0){
+            System.out.println("number is POSITIVE!");
+        }else{
+            System.out.println("number is ZERO!");
+        }
+
     }
 }
