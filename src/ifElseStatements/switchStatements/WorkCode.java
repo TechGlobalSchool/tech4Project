@@ -20,7 +20,7 @@ public class WorkCode {
         int day = input.nextInt();
 
         //1st way - using if - else if - else if - else statements
-        /*
+
         if(day == 1) System.out.println("Blue");
         else if(day == 2) System.out.println("Red");
         else if(day == 3) System.out.println("Purple");
@@ -28,7 +28,7 @@ public class WorkCode {
         else if(day == 5) System.out.println("Orange");
         else if(day == 6 || day == 7) System.out.println("It is weekend!");
         else System.out.println("This is not representing any day!");
-         */
+
 
         //2nd way - switch cases
 
@@ -44,6 +44,7 @@ public class WorkCode {
                 break;
             case 4:
                 System.out.println("Yellow");
+                System.out.println("This is Thursday");
                 break;
             case 5:
                 System.out.println("Orange");
