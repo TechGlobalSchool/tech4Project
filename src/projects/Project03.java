@@ -1,5 +1,7 @@
 package projects;
 
+import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
+
 public class Project03 {
     public static void main(String[] args) {
 
@@ -186,6 +188,38 @@ public class Project03 {
 //        char beyond127 = 64000;
 //        System.out.println(beyond127);
 
+        System.out.println("\nTASK7\n");
 
+        /*
+        TASK-7 (Find if given char is a letter or digit or special character)
+        -Assume you are given a single character. (It will be hard-coded)
+        -If given char is a letter, then print “Character is a letter”
+        -If given char is a digit, then print “Character is a digit”
+        -Otherwise, print “Character is a special character”
+        Test data 1: Assume you are given g
+        char c = ‘g’;
+        Expected result 1:
+        Character is a letter
+        Test data 2: Assume you are given 5
+        char c = ‘5’;
+        Expected result 2:
+        Character is a digit
+        Test data 3: Assume you are given 5
+        char c = ‘@’;
+        Expected result 3:
+        Character is a special character
+         */
+
+        c = '%';
+
+        if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')){
+            // ALL LETTERS HERE
+            System.out.println("Character is a letter");
+        }else if (c >= '0' && c <= '9'){
+            // ALL DIGITS HERE
+            System.out.println("Character is a digit");
+        }else{
+            System.out.println("Character is a special");
+        }
     }
 }
