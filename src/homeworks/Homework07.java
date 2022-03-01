@@ -28,10 +28,10 @@ public class Homework07 {
 
         ////////////////////TASK-1 SOLUTION///////////////////
         System.out.println("\n------------TASK-1------------\n");
-        int t1_num1 = (int)(Math.random() * 11);
-        int t1_num2 = (int)(Math.random() * 11);
-        int t1_num3 = (int)(Math.random() * 11);
-        int t1_num4 = (int)(Math.random() * 11);
+        int t1_num1 = (int) (Math.random() * 11);
+        int t1_num2 = (int) (Math.random() * 11);
+        int t1_num3 = (int) (Math.random() * 11);
+        int t1_num4 = (int) (Math.random() * 11);
 
         int i = 1;
         System.out.println("Number " + i++ + " = " + t1_num1);
@@ -85,14 +85,14 @@ public class Homework07 {
 
         ////////////////////TASK-2 SOLUTION///////////////////
         System.out.println("\n------------TASK-2------------\n");
-        int t2_num1 = (int)(Math.random() * 101) - 50;
-        int t2_num2 = (int)(Math.random() * 101) - 50;
-        int t2_num3 = (int)(Math.random() * 101) - 50;
-        int t2_num4 = (int)(Math.random() * 101) - 50;
-        int t2_num5 = (int)(Math.random() * 101) - 50;
-        int t2_num6 = (int)(Math.random() * 101) - 50;
-        int t2_num7 = (int)(Math.random() * 101) - 50;
-        int t2_num8 = (int)(Math.random() * 101) - 50;
+        int t2_num1 = (int) (Math.random() * 101) - 50;
+        int t2_num2 = (int) (Math.random() * 101) - 50;
+        int t2_num3 = (int) (Math.random() * 101) - 50;
+        int t2_num4 = (int) (Math.random() * 101) - 50;
+        int t2_num5 = (int) (Math.random() * 101) - 50;
+        int t2_num6 = (int) (Math.random() * 101) - 50;
+        int t2_num7 = (int) (Math.random() * 101) - 50;
+        int t2_num8 = (int) (Math.random() * 101) - 50;
 
         int j = 1;
         System.out.println("Number " + j++ + " = " + t2_num1);
@@ -112,10 +112,9 @@ public class Homework07 {
         System.out.println("Average of 8 numbers is = " + (t2_num1 + t2_num2 + t2_num3 + t2_num4 + t2_num5 + t2_num6 + t2_num7 + t2_num8) / 8);
         System.out.println("Absolute difference between smallest and greatest is = " + (maxOf8 - minOf8));
 
-        if(t2_num3 > 0){
+        if (t2_num3 > 0) {
             System.out.println("3rd number is positive = " + true);
-        }
-        else{
+        } else {
             System.out.println("3rd number is positive = " + false);
         }
 
@@ -123,20 +122,18 @@ public class Homework07 {
         System.out.println("3rd number is positive = " + (t2_num3 > 0));
 
 
-        if(t2_num5 < 0){
+        if (t2_num5 < 0) {
             System.out.println("5th number is negative = " + true);
-        }
-        else{
+        } else {
             System.out.println("5th number is negative = " + false);
         }
 
         //Instead of above if else, we could use below statement
         System.out.println("5th number is negative = " + (t2_num5 < 0));
 
-        if(t2_num1 == 0 || t2_num2 == 0 || t2_num3 == 0 || t2_num4 == 0 || t2_num5 == 0 || t2_num6 == 0 || t2_num7 == 0 || t2_num8 == 0){
+        if (t2_num1 == 0 || t2_num2 == 0 || t2_num3 == 0 || t2_num4 == 0 || t2_num5 == 0 || t2_num6 == 0 || t2_num7 == 0 || t2_num8 == 0) {
             System.out.println("There is at least one zero among those numbers is = " + true);
-        }
-        else{
+        } else {
             System.out.println("There is at least one zero among those numbers is = " + false);
         }
 
@@ -191,9 +188,9 @@ public class Homework07 {
         int t3_num6 = scan.nextInt();
         int t3_num7 = scan.nextInt();
 
-        if(t3_num1 > 25 && t3_num7 > 25){
+        if (t3_num1 > 25 && t3_num7 > 25) {
             System.out.println("Both first and last numbers are greater than 25 = " + true);
-        }else{
+        } else {
             System.out.println("Both first and last numbers are greater than 25 = " + false);
         }
 
@@ -214,18 +211,122 @@ public class Homework07 {
                 t3_num4 == 0 || t3_num4 == 50 || t3_num5 == 0 || t3_num5 == 50 || t3_num6 == 0 || t3_num6 == 50 ||
                 t3_num7 == 0 || t3_num7 == 50));
 
-        if(t3_num1 < 40 && t3_num2 < 40 && t3_num3 < 40 && t3_num4 < 40 && t3_num5 < 40 && t3_num6 < 40 && t3_num7 < 40){
+        if (t3_num1 < 40 && t3_num2 < 40 && t3_num3 < 40 && t3_num4 < 40 && t3_num5 < 40 && t3_num6 < 40 && t3_num7 < 40) {
             System.out.println("There is no number between 40 and 50 = " + true);
-        }
-        else{
+        } else {
             System.out.println("There is no number between 40 and 50 = " + false);
         }
 
-        if(t3_num1 >= 40 || t3_num2 >= 40 || t3_num3 >= 40 || t3_num4 >= 40 || t3_num5 >= 40 || t3_num6 >= 40 || t3_num7 >= 40){
+        if (t3_num1 >= 40 || t3_num2 >= 40 || t3_num3 >= 40 || t3_num4 >= 40 || t3_num5 >= 40 || t3_num6 >= 40 || t3_num7 >= 40) {
             System.out.println("There is no number between 40 and 50 = " + false);
-        }
-        else{
+        } else {
             System.out.println("There is no number between 40 and 50 = " + true);
         }
+
+        /*
+        Requirement:
+        Write a Java program that generates 3 random
+        numbers between 0 and 100 (0 and 100 are
+        included) and find if all numbers are more than
+        25
+        Print true if all numbers are greater than 25
+        Print false if any of the number is less than or
+        equal to 25
+         */
+        ////////////////////TASK-4 SOLUTION///////////////////
+
+
+
+
+        /*
+        Requirement:
+        Write a Java program to ask user to enter a
+        number between 1 and 7 (1 and 7 are included)
+        Print the day of the week according to given
+        number. First day is MONDAY and last day is
+        SUNDAY
+
+        Test data 1:
+        Input number: 3
+        Expected Output:
+        The number entered returns WEDNESDAY
+
+        Test data 2:
+        Input number: 5
+        Expected Output:
+        The number entered returns FRIDAY
+         */
+        ////////////////////TASK-5 SOLUTION///////////////////
+
+
+        /*
+        Requirement:
+        Write a program that asks user to enter a number
+        between
+        -10 to 10 (-10 and 10 are included)
+        -If number is positive, then print a message:
+        “Number entered is POSITIVE”
+        -If number is negative, then print a message:
+        “Number entered is NEGATIVE”
+        -If number is zero, then print a message: “Number
+        entered is ZERO”
+        -If number is even, then also print: “Number entered
+        is EVEN”
+        -If number is odd, then also print: “Number entered
+        is ODD”
+
+        Test data1:
+        0
+        Expected Output1:
+        Number entered is
+        ZERO
+        Number entered is
+        EVEN
+
+        Test data2:
+        5
+        Expected Output1:
+        Number entered is
+        POSITIVE
+        Number entered is
+        ODD
+         */
+        ////////////////////TASK-6 SOLUTION///////////////////
+
+        /*
+        Jennifer is taking a math course . This math course
+        requires students to take 3 exams. At the end, if the
+        average of those exams is more than or equal to 70, then
+        Jennifer will pass the course. However, if the average of
+        those 3 exams is less than 70, then Jennifer will fail.
+
+        Requirement:
+        Write a Java program that asks Jennifer to enter her exam
+        results and print if she passed or failed for the exam.
+        NOTE: This program requires you to use Scanner
+
+        Example Program 1:              Example Program 2:
+        Program: Tell me your           Program: Tell me your
+        exam results?                   exam results?
+        User: 20 50 85                  User: 65 80 90
+        Program: YOU FAILED!            Program: YOU PASSED!
+         */
+        ////////////////////TASK-7 SOLUTION///////////////////
+
+        /*
+        Requirement:
+        Write a Java program that asks user to enter 3 numbers
+        -If all 3 numbers are equal, then print “TRIPLE MATCH”
+        -If any of those 2 numbers are equal, then print
+        “DOUBLE MATCH”
+        -If all numbers are different, then print “NO MATCH”
+        NOTE: This program requires you to use Scanner
+
+        Example Program 1:          Example Program 2:              Example Program 3:
+        Program: Enter 3 numbers    Program: Enter 3 numbers        Program: Enter 3 numbers
+        User: 3 3 3                 User: 5 4 5                     User: 2 5 7
+        Program: TRIPLE MATCH       Program: DOUBLE MATCH           Program: NO MATCH
+         */
+        ////////////////////TASK-8 SOLUTION///////////////////
     }
 }
