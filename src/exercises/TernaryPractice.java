@@ -18,6 +18,8 @@ public class TernaryPractice {
 
         Scanner s = new Scanner(System.in);
 
+        System.out.println("Enter your height");
+
 //        int height = s.nextInt();
 //
 //        String printOut = (s.nextInt() > 5) ? "You are tall" : "You can't go to roller coaster";
@@ -31,5 +33,7 @@ public class TernaryPractice {
         else print out "You are not poor"
          */
 
+        System.out.println("Enter your balance");
+        System.out.println((s.nextDouble() >= 50.0) ? "You are not poor" : "You are poor");
     }
 }
