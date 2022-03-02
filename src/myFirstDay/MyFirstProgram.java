@@ -1,6 +1,8 @@
 package myFirstDay;
 
 
+import methods.Introduction;
+
 public class MyFirstProgram {
     /*
     To be able to run some code, I need to call main method first
