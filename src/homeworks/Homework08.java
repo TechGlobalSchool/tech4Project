@@ -1,9 +1,86 @@
 package homeworks;
 
+import utilities.MyMethods;
+import utilities.RandomNumberGenerator;
 import java.util.Scanner;
 
 public class Homework08 {
     public static void main(String[] args) {
+
+        System.out.println("\nTASK1\n");
+        /*
+        Requirement:
+        Write a program that generates a
+        random number between 0 and 50
+        (both 0 and 50 are included)
+        Print true if number is in between 10
+        and 25 (10 and 25 included)
+        Print false otherwise
+         */
+
+        int r = RandomNumberGenerator.getRandomNumber(0, 50);
+        System.out.println(r);
+
+
+
+        System.out.println(r >= 10 && r <= 25);
+        MyMethods.isNumberBetween10And25(r); // with method
+
+        //print out "r is in between 10 and 25(included)"
+        // else "r is NOT in between 10 and 25(included)"
+
+        if (r >= 10 && r <= 25) {
+            System.out.println("r is in between 10 and 25(included)");
+        } else {
+            System.out.println("r is NOT in between 10 and 25(included)");
+        }
+
+        System.out.println((r >= 10 && r <= 25)
+                ? "r is in between 10 and 25(included)"
+                : "r is NOT in between 10 and 25(included)");
+
+        System.out.println("\nTASK2\n");
+        /*
+        Requirement:
+        Write a program that generates a random number
+        between 1 and 100 (both 1 and 100 are included)
+        Find which quarter and half is number in
+        1st quarter is 1-25
+        2nd quarter is 26-50
+        3rd quarter is 51-75
+        4th quarter is 76-100
+        1st half is 1-50
+        2nd half is 51-100
+        Test data:
+        34
+        Expected result:
+        34 is in the 1st half
+        34 is in the 2nd quarter
+         */
+
+        int r2 = RandomNumberGenerator.getRandomNumber(1, 100);
+
+        if (r2 <= 50){ // 1st half is 1-50
+            System.out.println(r2 + " is in the 1st half");
+
+            if (r2 <= 25){  //1st quarter is 1-25
+                System.out.println(r2 + " is in the 1st quarter");
+            }else{          //2nd quarter is 26-50
+                System.out.println(r2 + " is in the 2nd quarter");
+            }
+
+        }else{          // 2nd half is 51-100
+            System.out.println(r2 + " is in the 2nd half");
+
+            if (r2 <= 75){ // 3rd quarter is 51-75
+                System.out.println(r2 + " is in the 3rd quarter");
+            }else{          //4th quarter is 76-100
+                System.out.println(r2 + " is in the 4th quarter");
+            }
+
+        }
+
+
 
 
         System.out.println("\nTASK3\n");

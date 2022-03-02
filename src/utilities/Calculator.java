@@ -37,10 +37,44 @@ public class Calculator {
 
 
     //Create a method that finds the sum of 2 int numbers and returns it
-    //Create a method that finds the sum of 2 double numbers and returns it
-    //Create a method that finds the absolute difference of 2 int numbers and returns it
-    //Create a method that finds the absolute difference of 2 double numbers and returns it
-    //Create a method that finds the product of 2 int numbers and returns it
-    //Create a method that finds the product of 2 double numbers and returns it
 
+    public static int findSumOf2(int n1, int n2){
+        return n1 + n2;
+    }
+
+    //Create a method that finds the sum of 2 double numbers and returns it
+
+    public static double findSumOf2(double n1, double n2){
+        return n1 + n2;
+    }
+
+    //Create a method that finds the absolute difference of 2 int numbers and returns it
+
+    public static int findAbsOf2(int n1, int n2){
+        //return Math.abs(n1 - n2);
+        return (n1 > n2)? n1 - n2: n2 - n1;
+    }
+
+    //Create a method that finds the absolute difference of 2 double numbers and returns it
+
+    public static double findAbsOf2(double n1, double n2){
+        if (n1 > n2){
+            // n1 - n2
+            return n1 - n2;
+        }else {
+            // n2 - n1
+            return n2 - n1;
+        }
+    }
+
+    //Create a method that finds the product of 2 int numbers and returns it
+
+    public static int findProductOf2(int n1, int n2){
+        return n1 * n2;
+    }
+
+    //Create a method that finds the product of 2 double numbers and returns it
+    public static double findProductOf2(double n1, double n2){
+        return n1 * n2;
+    }
 }
