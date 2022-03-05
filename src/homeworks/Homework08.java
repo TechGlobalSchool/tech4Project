@@ -60,25 +60,26 @@ public class Homework08 {
 
         int r2 = RandomNumberGenerator.getRandomNumber(1, 100);
 
-        if (r2 <= 50){ // 1st half is 1-50
-            System.out.println(r2 + " is in the 1st half");
-
-            if (r2 <= 25){  //1st quarter is 1-25
-                System.out.println(r2 + " is in the 1st quarter");
-            }else{          //2nd quarter is 26-50
-                System.out.println(r2 + " is in the 2nd quarter");
-            }
-
-        }else{          // 2nd half is 51-100
-            System.out.println(r2 + " is in the 2nd half");
-
-            if (r2 <= 75){ // 3rd quarter is 51-75
-                System.out.println(r2 + " is in the 3rd quarter");
-            }else{          //4th quarter is 76-100
-                System.out.println(r2 + " is in the 4th quarter");
-            }
-
-        }
+//        if (r2 <= 50){ // 1st half is 1-50
+//            System.out.println(r2 + " is in the 1st half");
+//
+//            if (r2 <= 25){  //1st quarter is 1-25
+//                System.out.println(r2 + " is in the 1st quarter");
+//            }else{          //2nd quarter is 26-50
+//                System.out.println(r2 + " is in the 2nd quarter");
+//            }
+//
+//        }else{          // 2nd half is 51-100
+//            System.out.println(r2 + " is in the 2nd half");
+//
+//            if (r2 <= 75){ // 3rd quarter is 51-75
+//                System.out.println(r2 + " is in the 3rd quarter");
+//            }else{          //4th quarter is 76-100
+//                System.out.println(r2 + " is in the 4th quarter");
+//            }
+//
+//        }
+        MyMethods.printHalfAndQuarter(r2);
 
 
 
