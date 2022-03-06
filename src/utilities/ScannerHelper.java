@@ -18,4 +18,11 @@ public class ScannerHelper {
         String name = scanner.nextLine();
         return name;
     }
+
+    public static String getAStringFromUser(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter a string: ");
+        String string = scanner.nextLine();
+        return string;
+    }
 }
