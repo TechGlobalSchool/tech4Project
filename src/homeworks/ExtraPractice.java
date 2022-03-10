@@ -1,7 +1,6 @@
 package homeworks;
 
 public class ExtraPractice {
-
     /*
     luckyUnluckyGame
         Create a method which will take an int as an argument and returns a String.
@@ -12,6 +11,42 @@ public class ExtraPractice {
         •If the number is -11 return "You have hit the unlucky number!"
         -77
      */
+
+    /*
+        Create a method which will take an int for age and String as a
+        name
+        •if the age is older than 30 and first letter is uppercase print out "Age and letter checks out"
+        •if the age is older than 30 and first letter is lowercase print out "Age checks out but letter doesn't"
+        •if the age is equal or younger than 30 and first letter is uppercase print out "Age doesn't check out but letter does"
+        •if the age is equal or younger than 30 and first letter is lowercase print out "Nothing checks out"
+
+        age being more than 30 || less than or equal to 30
+        name being uppercase || lowercase
+     */
+
+
+    public static void checkAgeAndName(String name, int age){
+        if(age > 30){
+            if(Character.isUpperCase(name.charAt(0))){
+                // age is > 30 and firs letter is uppercase
+                System.out.println("Age and letter checks out");
+            }
+            else{
+                // age is > 30 and firs letter is lowercase
+                System.out.println("Age checks out but letter doesn't");
+            }
+        }
+        else{
+            if(Character.isUpperCase(name.charAt(0))){
+                // age is <= 30 and firs letter is uppercase
+                System.out.println("Age doesn't check out but letter does");
+            }
+            else{
+                // age is <= 30 and firs letter is lowercase
+                System.out.println("Nothing checks out");
+            }
+        }
+    }
 
     public static String luckyUnluckyGame(int num){
         if(num == -11) return "You have hit the unlucky number!";
@@ -33,5 +68,10 @@ public class ExtraPractice {
         System.out.println(luckyUnluckyGame(-75));
         System.out.println(luckyUnluckyGame(34223));
 
+
+        checkAgeAndName("Abe", 31); //
+        checkAgeAndName("Data", 25);
+        checkAgeAndName("kaly", 35);
+        checkAgeAndName("guluzar", 19);
     }
 }
