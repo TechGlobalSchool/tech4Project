@@ -129,7 +129,7 @@ public class Homework12 {
          */
 
         int[] first = {5, 8, 13, 1, 2};
-        int[] second = {9, 3, 67, 1, 0};
+        int[] second = {9, 3, 67, 1, 0, 2 ,9};
 
         int[] third = new int[Math.max(first.length, second.length)]; // change this
 
@@ -137,8 +137,8 @@ public class Homework12 {
             /*
             i ->        0, 1, 2,  3, 4, 5, 6
 
-            First ->    5, 8, 13, 1, 2, 2 ,9
-            Second ->   9, 3, 67, 1, 0
+            First ->    5, 8, 13, 1, 2
+            Second ->   9, 3, 67, 1, 0, 2 ,9
 
             Third ->    9, 8, 67, 1, 2, 2, 9
              */
