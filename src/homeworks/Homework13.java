@@ -56,7 +56,79 @@ public class Homework13 {
 //        if (!isNegativeFound) System.out.println("Negative number was not found!");
 
 
+        /*
+        Requirement:
+        Write a program to find the all-matching elements between
+        2  int arrays
+        Test data 1:
+        int[] numbers1 = {10, 20, 30, 50, 70};
+        int[] numbers2 = {20, 50, 70, 100, 300};
 
+        Expected output 1:
+        20
+        50
+        70
+        Test data 2:
+        int[] numbers1 = {30, 50, 70};
+        int[] numbers2 = {20, 100, 300};
+
+        Expected output 2:
+        There is no matching elements
+        NOTE: Make your code dynamic that works for any given
+        int arrays.
+         */
+
+        int[] numbers1 = {10, 20, 30, 50, 70};
+        int[] numbers2 = {20, 50, 70, 100, 300};
+
+        boolean isDuplicateFound = false;
+
+        for (int i = 0; i < numbers1.length; i++) {
+            for (int j = 0; j < numbers2.length; j++) {
+                if (numbers1[i] == numbers2[j]){
+                    System.out.println(numbers1[i]);
+                    isDuplicateFound = true;
+                    break;
+                }
+            }
+        }
+
+        if(!isDuplicateFound) System.out.println("There is no matching elements");
+
+
+        /*
+        Requirement:
+        Write a program to print duplicated characters in
+        a String, ignore cases
+        Test data 1:
+        String str = ”baNana”;
+        Expected output 1:
+        a
+        N
+        Test data 2:
+        String str = ”aPple”;
+        Expected output 1:
+        P
+        NOTE: Make your code dynamic that works for
+        any given String.
+         */
+
+        String str = "baNana";
+        //            012345
+        String duplicates = ""; // a , n
+
+        for (int i = 0; i < str.length() - 1; i++) {
+            for (int j = i + 1; j < str.length(); j++) {
+
+                if (str.toLowerCase().charAt(i) == str.toLowerCase().charAt(j) &&
+                !duplicates.contains(str.toLowerCase().substring(i, i + 1))){
+                    duplicates += str.toLowerCase().charAt(i);
+                    System.out.println(str.charAt(i));
+                    break;
+                }
+
+            }
+        }
 
     }
 }
