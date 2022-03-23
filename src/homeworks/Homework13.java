@@ -19,8 +19,6 @@ public class Homework13 {
 
         int[] numbers = {0, -4, -7, 0, 5, 10, 45};
 
-//        boolean isPositiveFound = false;
-//        boolean isNegativeFound = false;
         int pos = -1;
         int neg = 1;
 
@@ -37,6 +35,26 @@ public class Homework13 {
 
         System.out.println((pos != -1) ? "First positive number is: " + pos : "Positive number was not found!");
         System.out.println((neg != 1) ? "First negative number is: " + neg : "Negative number was not found!");
+
+//        boolean isPositiveFound = false;
+//        boolean isNegativeFound = false;
+//
+//        for (int number : numbers) {
+//            if (isNegativeFound && isPositiveFound)break;
+//
+//            if (!isPositiveFound && number > 0){
+//                System.out.println("First positive number is: " + number);
+//                isPositiveFound = true;
+//            }
+//            else if (!isNegativeFound && number < 0){
+//                System.out.println("First negative number is: " + number);
+//                isNegativeFound = true;
+//            }
+//        }
+//
+//        if (!isPositiveFound) System.out.println("Positive number was not found!");
+//        if (!isNegativeFound) System.out.println("Negative number was not found!");
+
 
 
 
