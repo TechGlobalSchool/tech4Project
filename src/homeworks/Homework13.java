@@ -115,7 +115,7 @@ public class Homework13 {
 
         String str = "baNana";
         //            012345
-        String duplicates = ""; // a , n
+        String duplicates = ""; // a
 
         for (int i = 0; i < str.length() - 1; i++) {
             for (int j = i + 1; j < str.length(); j++) {
