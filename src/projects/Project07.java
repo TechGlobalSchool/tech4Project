@@ -28,14 +28,14 @@ public class Project07 {
 
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] != nums[0]){
-                System.out.println(nums[i]);
+                System.out.println("Second Smallest = " + nums[i]);
                 break;
             }
         }
 
         for (int i = nums.length - 1; i >= 0 ; i--) {
             if (nums[i] != nums[nums.length - 1]){
-                System.out.println(nums[i]);
+                System.out.println("Second Greatest = " + nums[i]);
                 break;
             }
         }
@@ -55,6 +55,26 @@ public class Project07 {
         Second Smallest = 6
         Second Greatest = 10
      */
+
+    public static void findSecondGreatestAndSmallest(int[] nums){
+        int max = 0;
+        int min = 0;
+        int secondMax = 0;
+        int secondMin = 0;
+        //
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] > max) max = nums[i];
+            if (nums[i] < min) min = nums[i];
+        }
+        //
+        for (int i = 0; i < nums.length; i++) {
+            if(nums[i] != max && nums[i] > secondMax) secondMax = nums[i];
+            if (nums[i] != min && nums[i] < secondMin) secondMin = nums[i];
+        }
+        System.out.println("Second Smallest = " + secondMin);
+        System.out.println("Second Greatest = " + secondMax);
+
+    }
 
     
     /*
@@ -108,6 +128,8 @@ public class Project07 {
         findMostRepeatedElementInAnArray(words3);
         findMostRepeatedElementInAnArray(new String[]{"x", "y", "z", "y"});
         findSecondGreatestAndSmallestWithSort(nums);
+        System.out.println(Arrays.toString(nums));
+        findSecondGreatestAndSmallest(nums);
 
     }
 }
