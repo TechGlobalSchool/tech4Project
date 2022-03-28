@@ -44,6 +44,18 @@ public class Project07 {
 
     }
 
+    /*
+    TASK-4 - findSecondGreatestAndSmallest() method
+        Write a method that takes an int array that has at least one element. Find
+        the second greatest and second smallest elements from the array and print
+        them. DO NOT sort the array and complete task without sorting.
+        Test data:
+        [10, 5, 6, 7, 8, 5, 15, 15]
+        Expected output:
+        Second Smallest = 6
+        Second Greatest = 10
+     */
+
     
     /*
     TASK-6 findMostRepeatedElementInAnArray() method 
