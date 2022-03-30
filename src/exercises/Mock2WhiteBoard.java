@@ -1,5 +1,8 @@
 package exercises;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Mock2WhiteBoard {
     // Count words
     // Palindrome
@@ -40,14 +43,16 @@ public class Mock2WhiteBoard {
         // civic -> length / 2
         // toyota -> length / 2 - 1
         boolean isPalindrome = true;
-        for (int i = 0; i <= s.length() / 2; i++) {
+        for (int i = 0, j = s.length() - 1; i <= s.length() / 2; i++ , j--) {
             //0                 l - 1
             //1                 l - 2
             //2                 l - 3
-            if (s.charAt(i) != s.charAt(s.length() - 1 - i)) {
+            if (s.charAt(i) != s.charAt(j)) {
                 isPalindrome = false;
                 break;
             }
+            new ArrayList<>();
+
         }
         return isPalindrome;
     }

@@ -82,6 +82,7 @@ public class _03_Practice_Remove_Elements {
 
         Iterator<String> iterator = languages.iterator(); // I put all elements in a queue
 
+        //[Java, JavaScript, C#, Python, C++]
         while(iterator.hasNext()){ // We are asking if there is an element in the queue
             String element = iterator.next(); // this gets an element from the queue
             if(element.startsWith("J")) { // if element came from the queue starts with J
