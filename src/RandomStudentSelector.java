@@ -11,7 +11,6 @@ public class RandomStudentSelector {
                 "Tasniem Hassan",
                 "Taylor Green",
                 "Ozden Firat",
-                "Sumeyye Feyza Ozbek",
                 "Abdullah Wazwaz",
                 "Alona Fomina",
                 "Daria Syvak",
@@ -33,7 +32,6 @@ public class RandomStudentSelector {
                 "Datkaiym Borbieva",
                 "Abraham Kim",
                 "Yousef M Saleh",
-                "Mohammed Abedrabbo",
                 "Nataliia Grynda",
                 "Jonathan Ochoa"
         };
