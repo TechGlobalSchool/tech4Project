@@ -26,5 +26,6 @@ public class Fruit {
         Fruit fruit3 = new Fruit();
         Fruit fruit4 = new Fruit();
         System.out.println("This is last line in the main method after object being created");
+        
     }
 }
