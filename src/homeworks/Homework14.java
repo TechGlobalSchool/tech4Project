@@ -96,6 +96,43 @@ public class Homework14 {
         else for (Integer duplicate : duplicates) System.out.println(duplicate);
          */
 
+        /*
+        Requirement:
+        Write a program to find the all duplicates in a String array, 
+        ignore cases. It should print "There is no duplicates" if 
+        there are no duplicate elements.
+        NOTE: Make your code dynamic that works for any given 
+        String array.
+        Test data 1:
+        String[] words = {"A", "foo", "12" , "Foo", "bar", "a", "a", 
+        "java"};
+         
+        Expected output 1:
+        A
+        foo
+        Test data 2:
+        String[] words = {"python", "foo", "bar", "java", "123" };
+         
+        Expected output 2:
+        There is no duplicates
+         */
+        System.out.println("\nTASK4\n");
+
+        String[] ws = {"A", "foo", "12" , "Foo", "bar", "a", "a","java"};
+
+        String duplicates = "";
+
+        for (int i = 0; i < ws.length - 1; i++) {
+            for (int j = i + 1; j < ws.length; j++) {
+                if (ws[i].equalsIgnoreCase(ws[j]) && !duplicates.contains(ws[i].toLowerCase())){
+                    System.out.println(ws[i]);
+                    duplicates += ws[i].toLowerCase();
+                }
+            }
+        }
+
+        if (duplicates.isEmpty()) System.out.println("There is no duplicates");
+        
         
         /*
         Requirement:
@@ -128,6 +165,8 @@ public class Homework14 {
         System.out.print("[");
         for (int i = words2.length - 1; i >= 0; i--) System.out.print((i == 0) ? words2[i] : words2[i] + ", ");
         System.out.print("]");
+        
+        
 
         /*
         Requirement:
@@ -135,13 +174,13 @@ public class Homework14 {
         NOTE: Make your code dynamic that works for any
         given String.
         Test data 1:
-        String str = “Java is fun”;
+        String str = "Java is fun";
 
         Expected output 1:
         avaJ si nuf
 
         Test data 2:
-        String str = “Today is a fun day”;
+        String str = "Today is a fun day";
 
         Expected output 2:
         yadoT si a nuf yad
@@ -167,6 +206,13 @@ public class Homework14 {
 //        for (int i = 0; i < w.length; i++) {
 //            System.out.print((i == w.length - 1) ? w[i]: w[i] + " ");
 //        }
+
+        //"Java is fun" --> "nuf si avaJ" --> "avaJ si nuf"
+
+        String rStr = "";
+        for (int i = str.length() - 1; i >= 0; i--) rStr += str.charAt(i);
+        String[] rStrArr = rStr.split(" ");
+        for (int i = rStrArr.length - 1; i >= 0 ; i--) System.out.print((i == 0) ? rStrArr[i] :rStrArr[i] + " ");
 
     }
 }
