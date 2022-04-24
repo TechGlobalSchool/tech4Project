@@ -31,11 +31,10 @@ public class RandomStudentSelector {
                 "Regina Biktimirova",
                 "Datkaiym Borbieva",
                 "Abraham Kim",
-                "Yousef M Saleh",
                 "Nataliia Grynda",
                 "Jonathan Ochoa"
         };
 
-        System.out.println(students[(int) (Math.random() * 34)]);
+        System.out.println(students[(int) (Math.random() * 31)]);
     }
 }

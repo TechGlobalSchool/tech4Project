@@ -17,5 +17,28 @@ public class UnderstandingStackAndHeap {
         System.out.println(dog1); // Dog@1540e19d
         System.out.println(dog2); // Dog@677327b6
         System.out.println(dog3); // Dog@14ae5a5
+
+
+        System.out.println("\n\n\n");
+
+        String s1 = "Data";
+        String s2 = "Data";
+
+
+        System.out.println("without new checking the VALUES = " + s1.equals(s2)); // checking the VALUES
+        System.out.println("without new checking the LOCATION = " + (s1 == s2)); // checking the LOCATION
+
+        String s3 = new String("Data");
+        String s4 = new String("Data");
+
+        System.out.println("with new checking the VALUES = " + s3.equals(s4)); // checking the VALUES
+        System.out.println("with new checking the LOCATION = " + (s3 == s4)); // checking the LOCATION
+
+        s3 = s4;
+
+        System.out.println("with new checking the VALUES = " + s3.equals(s4)); // checking the VALUES
+        System.out.println("with new checking the LOCATION = " + (s3 == s4)); // checking the LOCATION
+
+
     }
 }
