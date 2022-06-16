@@ -1,7 +1,6 @@
 package homeworks;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.*;
 
 public class Homework20 {
     public static void main(String[] args) {
@@ -91,6 +90,8 @@ public class Homework20 {
             if (noXElement.isEmpty()) list.remove(i--);
             else list.set(i, noXElement);
         }
+
+
 
         return list;
     }
