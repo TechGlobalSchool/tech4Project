@@ -12,7 +12,7 @@ public class Homework22 {
 //        System.out.println(fibonacciSeries2Recursion(9));
 //        System.out.println(fibonacciSeries2Way2(2));
 
-        int[] a = {1, 3, 3, 4, 2, 2};
+        int[] a = {1, 4, 2, 2, 1};
 //        int[] b = {2, 3, 5};
 //        System.out.println(Arrays.toString(findUniques(a, b)));
 
@@ -169,11 +169,15 @@ public class Homework22 {
     // 1, 1, 2, 2, 3, 3, 4 ,5, 6, 7, 1, 1
 
     public static int firstDuplicate(int[] nums){
+        int[] dup = {-1, Integer.MAX_VALUE};
 
         for (int i = 0; i < nums.length - 1; i++)
             for (int j = i + 1; j < nums.length; j++)
-                if (nums[i] == nums[j]) return nums[i];
-        return -1;
+                if (nums[i] == nums[j] && j - i < dup[1]){
+                    dup[1] = j - i;
+                    dup[0] = nums[i];
+                }
+        return dup[0];
     }
 
 }
