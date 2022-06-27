@@ -11,10 +11,9 @@ public class Homework23 {
 //        parseData(data);
 //        System.out.println(parseData(data));
         Map<String, Integer> quantityOfItems = new HashMap<>();
-        quantityOfItems.put("Apple", 2);
-        quantityOfItems.put("Pineapple", 1);
-        quantityOfItems.put("Orange", 3);
-        System.out.println(calculateTotalPrice1(quantityOfItems));
+        quantityOfItems.put("Apple", 3);
+        quantityOfItems.put("Mango", 5);
+        System.out.println(calculateTotalPrice2(quantityOfItems));
     }
 
     public static TreeMap<String, String> parseData(String data){
@@ -58,7 +57,32 @@ public class Homework23 {
 //            Integer amountOfItem = quantityOfItems.get(item);
             totalPrice += Double.parseDouble(pricesOfItems.get(item).substring(1)) * quantityOfItems.get(item);
         }
+        return totalPrice;
+    }
 
+    public static double calculateTotalPrice2(Map<String, Integer> quantityOfItems){
+        double totalPrice = 0;
+
+        HashMap<String, String> pricesOfItems = new HashMap<>();
+        pricesOfItems.put("Apple", "$2.00");
+        pricesOfItems.put("Orange", "$3.29");
+        pricesOfItems.put("Mango", "$4.99");
+
+        for (String item :quantityOfItems.keySet()) {
+//            Integer amountOfItem = quantityOfItems.get(item);
+            // mango --> 10 / 4 = 2
+            // mango -->  quantityOfItems.get(item) / 4 = 2
+
+            // Apple --> 11 / 2 = 5
+            // Apple --> 12 / 2 = 6
+            // Apple -->  quantityOfItems.get(item) / 2
+
+            totalPrice += Double.parseDouble(pricesOfItems.get(item).substring(1)) * quantityOfItems.get(item);
+            if (item.equals("Mango")) totalPrice -=
+                    Double.parseDouble(pricesOfItems.get(item).substring(1)) * (int)(quantityOfItems.get(item) / 4);
+            if (item.equals("Apple")) totalPrice -=
+                    (Double.parseDouble(pricesOfItems.get(item).substring(1)) / 2) * (int)(quantityOfItems.get(item) / 2);
+        }
         return totalPrice;
     }
 
